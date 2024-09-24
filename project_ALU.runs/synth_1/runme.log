@@ -1,0 +1,386 @@
+
+*** Running vivado
+    with args -log CPU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+
+
+ECHO は <OFF> です。
+ECHO は <OFF> です。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CPU.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 477.406 ; gain = 178.164
+Command: read_checkpoint -auto_incremental -incremental D:/project_ALU/project_ALU.srcs/utils_1/imports/synth_1/ALUCA.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/project_ALU/project_ALU.srcs/utils_1/imports/synth_1/ALUCA.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6892
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 929.578 ; gain = 440.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'notout', assumed default net type 'wire' [D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v:54]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALUCA' [D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Not16' [D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Not16' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v:5]
+INFO: [Synth 8-6157] synthesizing module 'And16' [D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'And16' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Mux16' [D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Mux16' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Add16' [D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Add16' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v:5]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (16) of module 'Not16' [D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v:54]
+INFO: [Synth 8-6157] synthesizing module 'And16Way' [D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'And16Way' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v:5]
+INFO: [Synth 8-6157] synthesizing module 'And' [D:/project_ALU/project_ALU.srcs/sources_1/new/And.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'And' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/And.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCA' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myMux' [D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myMux' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v:5]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myDeMux' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myDeMux' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:5]
+WARNING: [Synth 8-6104] Input port 'x' has an internal driver [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:45]
+WARNING: [Synth 8-6104] Input port 'y' has an internal driver [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+WARNING: [Synth 8-3848] Net we in module/entity CPU does not have driver. [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:22]
+WARNING: [Synth 8-3848] Net inaddr in module/entity CPU does not have driver. [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:23]
+WARNING: [Synth 8-3848] Net outaddr in module/entity CPU does not have driver. [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1035.707 ; gain = 546.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1035.707 ; gain = 546.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1035.707 ; gain = 546.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1035.707 ; gain = 546.844
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1236.988 ; gain = 748.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+-------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------+-----------+----------------------+-------------+
+|regfile1    | file_reg   | Implied   | 8 x 16               | RAM32M x 3  | 
++------------+------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+-------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++------------+------------+-----------+----------------------+-------------+
+|regfile1    | file_reg   | Implied   | 8 x 16               | RAM32M x 3  | 
++------------+------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin regfile1:we to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:inaddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:inaddr[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:inaddr[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:outaddr[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:outaddr[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin regfile1:outaddr[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[0] with 1st driver pin 'x_IBUF[0]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[0] with 2nd driver pin 'myDeMux1/x_reg[0]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[0] with 3rd driver pin 'myDeMux1/x_reg[0]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[1] with 1st driver pin 'x_IBUF[1]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[1] with 2nd driver pin 'myDeMux1/x_reg[1]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[1] with 3rd driver pin 'myDeMux1/x_reg[1]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[2] with 1st driver pin 'x_IBUF[2]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[2] with 2nd driver pin 'myDeMux1/x_reg[2]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[2] with 3rd driver pin 'myDeMux1/x_reg[2]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[3] with 1st driver pin 'x_IBUF[3]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[3] with 2nd driver pin 'myDeMux1/x_reg[3]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[3] with 3rd driver pin 'myDeMux1/x_reg[3]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[4] with 1st driver pin 'x_IBUF[4]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[4] with 2nd driver pin 'myDeMux1/x_reg[4]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[4] with 3rd driver pin 'myDeMux1/x_reg[4]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[5] with 1st driver pin 'x_IBUF[5]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[5] with 2nd driver pin 'myDeMux1/x_reg[5]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[5] with 3rd driver pin 'myDeMux1/x_reg[5]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[6] with 1st driver pin 'x_IBUF[6]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[6] with 2nd driver pin 'myDeMux1/x_reg[6]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[6] with 3rd driver pin 'myDeMux1/x_reg[6]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[7] with 1st driver pin 'x_IBUF[7]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[7] with 2nd driver pin 'myDeMux1/x_reg[7]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[7] with 3rd driver pin 'myDeMux1/x_reg[7]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[8] with 1st driver pin 'x_IBUF[8]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[8] with 2nd driver pin 'myDeMux1/x_reg[8]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[8] with 3rd driver pin 'myDeMux1/x_reg[8]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[9] with 1st driver pin 'x_IBUF[9]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[9] with 2nd driver pin 'myDeMux1/x_reg[9]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[9] with 3rd driver pin 'myDeMux1/x_reg[9]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[10] with 1st driver pin 'x_IBUF[10]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[10] with 2nd driver pin 'myDeMux1/x_reg[10]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[10] with 3rd driver pin 'myDeMux1/x_reg[10]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[11] with 1st driver pin 'x_IBUF[11]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[11] with 2nd driver pin 'myDeMux1/x_reg[11]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[11] with 3rd driver pin 'myDeMux1/x_reg[11]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[12] with 1st driver pin 'x_IBUF[12]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[12] with 2nd driver pin 'myDeMux1/x_reg[12]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[12] with 3rd driver pin 'myDeMux1/x_reg[12]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[13] with 1st driver pin 'x_IBUF[13]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[13] with 2nd driver pin 'myDeMux1/x_reg[13]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[13] with 3rd driver pin 'myDeMux1/x_reg[13]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[14] with 1st driver pin 'x_IBUF[14]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[14] with 2nd driver pin 'myDeMux1/x_reg[14]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[14] with 3rd driver pin 'myDeMux1/x_reg[14]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[15] with 1st driver pin 'x_IBUF[15]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[15] with 2nd driver pin 'myDeMux1/x_reg[15]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in[15] with 3rd driver pin 'myDeMux1/x_reg[15]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:14]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[0] with 1st driver pin 'y_IBUF[0]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[0] with 2nd driver pin 'myDeMux1/y_reg[0]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[0] with 3rd driver pin 'myDeMux1/y_reg[0]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[1] with 1st driver pin 'y_IBUF[1]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[1] with 2nd driver pin 'myDeMux1/y_reg[1]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[1] with 3rd driver pin 'myDeMux1/y_reg[1]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[2] with 1st driver pin 'y_IBUF[2]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[2] with 2nd driver pin 'myDeMux1/y_reg[2]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[2] with 3rd driver pin 'myDeMux1/y_reg[2]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[3] with 1st driver pin 'y_IBUF[3]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[3] with 2nd driver pin 'myDeMux1/y_reg[3]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[3] with 3rd driver pin 'myDeMux1/y_reg[3]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[4] with 1st driver pin 'y_IBUF[4]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[4] with 2nd driver pin 'myDeMux1/y_reg[4]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[4] with 3rd driver pin 'myDeMux1/y_reg[4]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[5] with 1st driver pin 'y_IBUF[5]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[5] with 2nd driver pin 'myDeMux1/y_reg[5]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[5] with 3rd driver pin 'myDeMux1/y_reg[5]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[6] with 1st driver pin 'y_IBUF[6]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[6] with 2nd driver pin 'myDeMux1/y_reg[6]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[6] with 3rd driver pin 'myDeMux1/y_reg[6]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[7] with 1st driver pin 'y_IBUF[7]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[7] with 2nd driver pin 'myDeMux1/y_reg[7]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[7] with 3rd driver pin 'myDeMux1/y_reg[7]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[8] with 1st driver pin 'y_IBUF[8]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[8] with 2nd driver pin 'myDeMux1/y_reg[8]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[8] with 3rd driver pin 'myDeMux1/y_reg[8]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[9] with 1st driver pin 'y_IBUF[9]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[9] with 2nd driver pin 'myDeMux1/y_reg[9]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[9] with 3rd driver pin 'myDeMux1/y_reg[9]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[10] with 1st driver pin 'y_IBUF[10]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[10] with 2nd driver pin 'myDeMux1/y_reg[10]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[10] with 3rd driver pin 'myDeMux1/y_reg[10]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[11] with 1st driver pin 'y_IBUF[11]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[11] with 2nd driver pin 'myDeMux1/y_reg[11]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[11] with 3rd driver pin 'myDeMux1/y_reg[11]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[12] with 1st driver pin 'y_IBUF[12]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[12] with 2nd driver pin 'myDeMux1/y_reg[12]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[12] with 3rd driver pin 'myDeMux1/y_reg[12]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[13] with 1st driver pin 'y_IBUF[13]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[13] with 2nd driver pin 'myDeMux1/y_reg[13]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[13] with 3rd driver pin 'myDeMux1/y_reg[13]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[14] with 1st driver pin 'y_IBUF[14]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[14] with 2nd driver pin 'myDeMux1/y_reg[14]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[14] with 3rd driver pin 'myDeMux1/y_reg[14]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[15] with 1st driver pin 'y_IBUF[15]_inst/O' [D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v:5]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[15] with 2nd driver pin 'myDeMux1/y_reg[15]__0/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin a[15] with 3rd driver pin 'myDeMux1/y_reg[15]/Q' [D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v:15]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    80|
+|4     |LUT2   |    52|
+|5     |LUT3   |   112|
+|6     |LUT6   |     3|
+|7     |RAM32M |     3|
+|8     |FDRE   |    64|
+|9     |IBUF   |    43|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+---------+------+
+|      |Instance    |Module   |Cells |
++------+------------+---------+------+
+|1     |top         |         |   363|
+|2     |  ALUCA1    |ALUCA    |   232|
+|3     |    not160  |Not16__1 |    16|
+|4     |    and160  |And16__1 |    16|
+|5     |    mux161  |Mux16__1 |    16|
+|6     |    not161  |Not16__2 |    16|
+|7     |    mux1611 |Mux16__2 |    16|
+|8     |    mux162  |Mux16__3 |    16|
+|9     |    not162  |Not16__3 |    16|
+|10    |    mux1622 |Mux16__4 |    16|
+|11    |    and163  |And16    |    16|
+|12    |    add163  |Add16    |    20|
+|13    |    mux164  |Mux16__5 |    16|
+|14    |    not165  |Not16__4 |    16|
+|15    |    mux165  |Mux16    |    16|
+|16    |    not166  |Not16    |    16|
+|17    |    and16w  |And16Way |     3|
+|18    |    and1    |And      |     1|
+|19    |  myMux1    |myMux    |    16|
+|20    |  regfile1  |regfile  |     3|
+|21    |  myDeMux1  |myDeMux  |    68|
++------+------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.902 ; gain = 751.039
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1251.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1345.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+
+指定されたパスが見つかりません。
+Synth Design complete | Checksum: c18e87e6
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 14 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1345.281 ; gain = 863.910
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1345.281 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/project_ALU/project_ALU.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 24 13:04:09 2024...

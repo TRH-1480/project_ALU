@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+ALU Result:     x
+Mux Result:     x
+Register File Output:     x
+$finish called at time : 80 ns : File "D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v" Line 41
