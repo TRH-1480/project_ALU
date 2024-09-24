@@ -5,8 +5,8 @@
 module CPU(
     input clk,
     input rs,
-    input [15:0] x,y,
-    input f1,f2,f3,//flag
+    input [15:0] x,y,//data
+    input f1,f2,f3,
     input zx,nx,zy,ny,f,no
     //output [15:0] result, //ALU‚Ìo—Í
     //output [15:0] result1, //Mux§ŒäŒã‚Ìo—Í
