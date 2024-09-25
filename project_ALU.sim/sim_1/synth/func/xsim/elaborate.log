@@ -1,0 +1,11 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot CPU_tb_func_synth xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result2' on this module [D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v:17]
+ERROR: [VRFC 10-3180] cannot find port 'outaddr' on this module [D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v:16]
+ERROR: [VRFC 10-8530] module 'FDRE(IS_C_INVERTED=1'b1)' is ignored due to previous errors [/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/FDRE.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

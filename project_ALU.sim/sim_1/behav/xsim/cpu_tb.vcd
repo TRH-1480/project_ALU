@@ -1,0 +1,333 @@
+$date
+   Wed Sep 25 13:46:48 2024
+$end
+
+$version
+  2023.2
+  $dumpfile ("cpu_tb.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module CPU_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rs $end
+$var reg 16 # x [15:0] $end
+$var reg 16 $ y [15:0] $end
+$var reg 1 % f1 $end
+$var reg 1 & f2 $end
+$var reg 1 ' f3 $end
+$var reg 1 ( zx $end
+$var reg 1 ) nx $end
+$var reg 1 * zy $end
+$var reg 1 + ny $end
+$var reg 1 , f $end
+$var reg 1 - no $end
+$var reg 1 . we $end
+$var reg 3 / inaddr [2:0] $end
+$var reg 3 0 outaddr [2:0] $end
+$scope module cpu1 $end
+$var wire 1 1 clk $end
+$var wire 1 2 rs $end
+$var wire 16 3 x [15:0] $end
+$var wire 16 4 y [15:0] $end
+$var wire 1 5 f1 $end
+$var wire 1 6 f2 $end
+$var wire 1 7 f3 $end
+$var wire 1 8 zx $end
+$var wire 1 9 nx $end
+$var wire 1 : zy $end
+$var wire 1 ; ny $end
+$var wire 1 < f $end
+$var wire 1 = no $end
+$var wire 1 > we $end
+$var wire 3 ? inaddr [2:0] $end
+$var wire 3 @ outaddr [2:0] $end
+$var wire 1 A zr $end
+$var wire 1 B ng $end
+$var wire 16 C out_alu [15:0] $end
+$var wire 16 D out_mux [15:0] $end
+$var wire 16 E out_reg [15:0] $end
+$var wire 16 F out_x [15:0] $end
+$var wire 16 G out_y [15:0] $end
+$scope module ALUCA1 $end
+$var wire 16 3 x [15:0] $end
+$var wire 16 4 y [15:0] $end
+$var wire 1 8 zx $end
+$var wire 1 9 nx $end
+$var wire 1 : zy $end
+$var wire 1 ; ny $end
+$var wire 1 < f $end
+$var wire 1 = no $end
+$var wire 16 C out [15:0] $end
+$var wire 1 A zr $end
+$var wire 1 B ng $end
+$var wire 16 H notx [15:0] $end
+$var wire 16 I allzero [15:0] $end
+$var wire 16 J zxx [15:0] $end
+$var wire 16 K notzxx [15:0] $end
+$var wire 16 L xin [15:0] $end
+$var wire 16 M zyy [15:0] $end
+$var wire 16 N notzyy [15:0] $end
+$var wire 16 O yin [15:0] $end
+$var wire 16 P andxy [15:0] $end
+$var wire 16 Q addxy [15:0] $end
+$var wire 16 R fxy [15:0] $end
+$var wire 16 S notfxy [15:0] $end
+$var wire 1 T notout $end
+$scope module not160 $end
+$var wire 16 3 in [15:0] $end
+$var wire 16 H out [15:0] $end
+$upscope $end
+$scope module and160 $end
+$var wire 16 3 a [15:0] $end
+$var wire 16 H b [15:0] $end
+$var wire 16 I out [15:0] $end
+$upscope $end
+$scope module mux161 $end
+$var wire 16 3 a [15:0] $end
+$var wire 16 I b [15:0] $end
+$var wire 1 8 s $end
+$var wire 16 J out [15:0] $end
+$upscope $end
+$scope module not161 $end
+$var wire 16 J in [15:0] $end
+$var wire 16 K out [15:0] $end
+$upscope $end
+$scope module mux1611 $end
+$var wire 16 J a [15:0] $end
+$var wire 16 K b [15:0] $end
+$var wire 1 9 s $end
+$var wire 16 L out [15:0] $end
+$upscope $end
+$scope module mux162 $end
+$var wire 16 4 a [15:0] $end
+$var wire 16 I b [15:0] $end
+$var wire 1 : s $end
+$var wire 16 M out [15:0] $end
+$upscope $end
+$scope module not162 $end
+$var wire 16 M in [15:0] $end
+$var wire 16 N out [15:0] $end
+$upscope $end
+$scope module mux1622 $end
+$var wire 16 M a [15:0] $end
+$var wire 16 N b [15:0] $end
+$var wire 1 ; s $end
+$var wire 16 O out [15:0] $end
+$upscope $end
+$scope module and163 $end
+$var wire 16 L a [15:0] $end
+$var wire 16 O b [15:0] $end
+$var wire 16 P out [15:0] $end
+$upscope $end
+$scope module add163 $end
+$var wire 16 L a [15:0] $end
+$var wire 16 O b [15:0] $end
+$var wire 16 Q out [15:0] $end
+$upscope $end
+$scope module mux164 $end
+$var wire 16 P a [15:0] $end
+$var wire 16 Q b [15:0] $end
+$var wire 1 < s $end
+$var wire 16 R out [15:0] $end
+$upscope $end
+$scope module not165 $end
+$var wire 16 R in [15:0] $end
+$var wire 16 S out [15:0] $end
+$upscope $end
+$scope module mux165 $end
+$var wire 16 R a [15:0] $end
+$var wire 16 S b [15:0] $end
+$var wire 1 = s $end
+$var wire 16 C out [15:0] $end
+$upscope $end
+$scope module not166 $end
+$var wire 16 C in [15:0] $end
+$var wire 16 U out [15:0] $end
+$upscope $end
+$scope module and16w $end
+$var wire 16 V a [15:0] $end
+$var wire 1 A out $end
+$upscope $end
+$scope module and1 $end
+$var wire 1 W a $end
+$var wire 1 X b $end
+$var wire 1 B out $end
+$upscope $end
+$upscope $end
+$scope module myMux1 $end
+$var wire 1 2 rs $end
+$var wire 1 5 f1 $end
+$var wire 16 D din [15:0] $end
+$var wire 16 C out [15:0] $end
+$upscope $end
+$scope module regfile1 $end
+$var wire 1 1 ck $end
+$var wire 1 > we $end
+$var wire 16 D din [15:0] $end
+$var wire 3 ? inaddr [2:0] $end
+$var wire 16 E dout [15:0] $end
+$var wire 3 @ outaddr [2:0] $end
+$upscope $end
+$scope module myDeMux1 $end
+$var wire 1 2 rs $end
+$var wire 1 1 ck $end
+$var wire 1 6 f2 $end
+$var wire 1 7 f3 $end
+$var reg 16 Y x [15:0] $end
+$var reg 16 Z y [15:0] $end
+$var wire 16 E dout [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+b0 #
+b0 $
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+b0 /
+b0 0
+01
+12
+bx 3
+bx 4
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+b0 ?
+b0 @
+xA
+xB
+bx C
+b0 D
+bx E
+bx F
+bx G
+bx H
+bx I
+bx J
+bx K
+bx L
+bx M
+bx N
+bx O
+bx P
+bx Q
+bx R
+bx S
+xT
+bx U
+bzx V
+xW
+1X
+bx Y
+bx Z
+$end
+
+#50000
+1!
+11
+b0 3
+b0 4
+0B
+b0 C
+b0 F
+b0 G
+b1111111111111111 H
+b0 I
+b0 J
+b1111111111111111 K
+b0 L
+b0 M
+b1111111111111111 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b1111111111111111 S
+1T
+b1111111111111111 U
+bz1 V
+0W
+b0 Y
+b0 Z
+
+#100000
+0!
+0"
+b1010 #
+b101 $
+1,
+01
+02
+b0x0x0 3
+b0x0x 4
+1<
+xB
+bx C
+b111111111111x1x1 H
+b0x0x0 I
+b0x0x0 J
+b111111111111x1x1 K
+b0x0x0 L
+b0x0x M
+b1111111111111x1x N
+b0x0x O
+bx Q
+bx R
+bx S
+xT
+bx U
+bzx V
+xW
+
+#150000
+1!
+11
+
+#200000
+0!
+01
+
+#250000
+1!
+11
+
+#300000
+0!
+1.
+b1 /
+01
+1>
+b1 ?
+
+#350000
+1!
+11
+
+#400000
+0.
+b1 0

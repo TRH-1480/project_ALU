@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/project_ALU/project_ALU.sim/sim_1/synth/func/xsim/CPU_tb_func_synth.v,1727240924,verilog,,D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v,,ALUCA;Add16;And;And16;And16Way;And16__1;CPU;Mux16;Mux16__1;Mux16__2;Mux16__3;Mux16__4;Mux16__5;Not16;Not16__1;Not16__2;Not16__3;Not16__4;glbl;myDeMux;myMux;regfile,,,,,,,,
+D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v,1727240835,verilog,,,,CPU_tb,,,,,,,,

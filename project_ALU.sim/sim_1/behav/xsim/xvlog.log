@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/And.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module And
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module And16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module And16Way
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Not16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myDeMux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myMux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb
