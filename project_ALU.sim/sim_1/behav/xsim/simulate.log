@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+Starting ALUCA Test Bench
+Test1(0):x = 000a, y = 0005, out = 0000
+Test2(1):x = 000a, y = 0005, out = 0001
+Test3(-1):x = 000a, y = 0005, out = ffff
+Test4(x):x = 000a, y = 0005, out = 000a
+Test5(y):x = 000a, y = 0005, out = 0005
+Test6(!x):x = 000a, y = 0005, out = fff5
+Test7(!y):x = 000a, y = 0005, out = fffa
+Test8(-x):x = 000a, y = 0005, out = fff6
+Test9(-y):x = 000a, y = 0005, out = fffb
+Test10(x+1):x = 000a, y = 0005, out = 000b
+Test11(y+1):x = 000a, y = 0005, out = 0006
+Test12(x-1):x = 000a, y = 0005, out = 0009
+Test13(y-1):x = 000a, y = 0005, out = 0004
+Test14(x+y):x = 000a, y = 0005, out = 000f
+Test15(x-y):x = 000a, y = 0005, out = 0005
+Test16(y-x):x = 000a, y = 0005, out = fffb
+Test17(x&y):x = 000a, y = 0005, out = 0000
+Test18(x|y):x = 000a, y = 0005, out = 000f
+ALUCA Test Bench Finished
+$finish called at time : 180 ns : File "D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v" Line 118

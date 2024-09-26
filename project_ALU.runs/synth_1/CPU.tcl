@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/TRH/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12052-LAPTOP-524UQHHN/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -110,6 +106,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/project_ALU/project_ALU.srcs/constrs_1/new/cpu.xdc
+set_property used_in_implementation false [get_files D:/project_ALU/project_ALU.srcs/constrs_1/new/cpu.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental D:/project_ALU/project_ALU.srcs/utils_1/imports/synth_1/ALUCA.dcp

@@ -5,12 +5,7 @@
 module ALUCA(
     input [15:0] x,
     input [15:0] y,
-    input zx,nx,zy,ny,f,no,
-    //wire [15:0] notx,allzero,
-    //wire [15:0] zxx,notzxx,xin,
-    //wire [15:0] zyy,notzyy,yin,
-    //wire [15:0] andxy,addxy,
-    //wire [15:0] fxy,notfxy,
+    input zx,nx,zy,ny,f,no,//コントロールビット
     output [15:0] out,
     output zr,ng //flag
     );

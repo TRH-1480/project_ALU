@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Sep 24 13:04:08 2024
+| Date         : Thu Sep 26 11:10:49 2024
 | Host         : LAPTOP-524UQHHN running 64-bit major release  (build 9200)
 | Command      : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
 | Design       : CPU
@@ -94,7 +94,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   43 |     0 |          0 |       210 | 20.48 |
+| Bonded IOB                  |   98 |     0 |          0 |       210 | 46.67 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -154,7 +154,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | LUT1     |   80 |                 LUT |
 | FDRE     |   64 |        Flop & Latch |
 | LUT2     |   52 |                 LUT |
-| IBUF     |   43 |                  IO |
+| IBUF     |   50 |                  IO |
+| OBUF     |   48 |                  IO |
 | RAMD32   |   18 |  Distributed Memory |
 | RAMS32   |    6 |  Distributed Memory |
 | CARRY4   |    4 |          CarryLogic |

@@ -5,13 +5,9 @@ verilog xil_defaultlib  \
 "../../../../project_ALU.srcs/sources_1/new/And.v" \
 "../../../../project_ALU.srcs/sources_1/new/And16.v" \
 "../../../../project_ALU.srcs/sources_1/new/And16Way.v" \
-"../../../../project_ALU.srcs/sources_1/new/CPU.v" \
 "../../../../project_ALU.srcs/sources_1/new/Mux16.v" \
 "../../../../project_ALU.srcs/sources_1/new/Not16.v" \
-"../../../../project_ALU.srcs/sources_1/new/myDeMux.v" \
-"../../../../project_ALU.srcs/sources_1/new/myMux.v" \
-"../../../../project_ALU.srcs/sources_1/new/regfile.v" \
-"../../../../project_ALU.srcs/sim_1/new/CPU_tb.v" \
+"../../../../project_ALU.srcs/sim_1/new/ALUCA_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
