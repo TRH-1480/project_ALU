@@ -8,7 +8,7 @@ module thCpu_tb;
     reg [10:0] command;
     wire [15:0] out;
     reg [15:0] din;
-    wire dout [15:0];
+    wire [15:0] dout;
     wire zr,ng;
     reg ck;
     
@@ -19,9 +19,9 @@ module thCpu_tb;
     
     //クロックの生成
     always begin 
-        clk = 0; 
+        ck = 0; 
         #(STEP/2); //#：指定した時間だけ遅延
-        clk = 1; 
+        ck = 1; 
         #(STEP/2);
     end 
     
@@ -37,7 +37,7 @@ module thCpu_tb;
         y = 16'b0000_0001_0000_0001;
     #STEP
         command = 10'b0_000_000010;    
-    #STEP $fibish;
+    #STEP $finish;
     end        
 
 endmodule

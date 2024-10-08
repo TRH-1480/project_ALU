@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/project_ALU/project_ALU.srcs
+Z0 dD:/project_ALU
 vAdd16
-Z1 !s110 1728376313
+Z1 !s110 1728376082
 !i10b 1
 !s100 YlYNYT7`G>fSQMHFVkT7G1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ R0
 w1726576709
 8D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v
-!i122 22
+!i122 7
 Z4 L0 5 7
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1728376313.000000
+Z6 !s108 1728376082.000000
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v|
 !i113 1
@@ -44,7 +44,7 @@ R0
 w1727354115
 8D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v
-!i122 23
+!i122 8
 L0 5 52
 R5
 r1
@@ -58,7 +58,7 @@ R7
 R8
 n@a@l@u@c@a
 vALUCA_tb
-!s110 1728376298
+Z9 !s110 1728376063
 !i10b 1
 !s100 KPiU[4:SV1E:Y>dldfFXY1
 R2
@@ -68,13 +68,13 @@ R0
 w1726739207
 8D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v
 FD:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v
-!i122 15
+!i122 3
 L0 5 119
 R5
 r1
 !s85 0
 31
-!s108 1728376298.000000
+!s108 1728376062.000000
 !s107 D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v|
 !i113 1
@@ -92,7 +92,7 @@ R0
 w1726641390
 8D:/project_ALU/project_ALU.srcs/sources_1/new/And.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/And.v
-!i122 24
+!i122 9
 R4
 R5
 r1
@@ -116,7 +116,7 @@ R0
 w1726576499
 8D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/And16.v
-!i122 25
+!i122 10
 R4
 R5
 r1
@@ -130,7 +130,7 @@ R7
 R8
 n@and16
 vAnd16Way
-Z9 !s110 1728376314
+Z10 !s110 1728376083
 !i10b 1
 !s100 `zR3iJfHLZ1]cbg0ZAHZ[2
 R2
@@ -140,13 +140,13 @@ R0
 w1726641599
 8D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v
-!i122 26
-Z10 L0 5 8
+!i122 11
+Z11 L0 5 8
 R5
 r1
 !s85 0
 31
-R6
+Z12 !s108 1728376083.000000
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v|
 !i113 1
@@ -154,7 +154,7 @@ R7
 R8
 n@and16@way
 vCPU
-R9
+R10
 !i10b 1
 !s100 ifV1XWR;HQK1RoX2zeWmQ2
 R2
@@ -164,13 +164,13 @@ R0
 w1728359006
 8D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v
-!i122 27
+!i122 12
 L0 5 43
 R5
 r1
 !s85 0
 31
-Z11 !s108 1728376314.000000
+R12
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v|
 !i113 1
@@ -178,7 +178,7 @@ R7
 R8
 n@c@p@u
 vCPU_tb
-Z12 !s110 1728376299
+R9
 !i10b 1
 !s100 DZ`Ld:6L9>4RCM1;_Vc_W3
 R2
@@ -188,13 +188,13 @@ R0
 w1727354050
 8D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v
 FD:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v
-!i122 19
+!i122 4
 L0 4 83
 R5
 r1
 !s85 0
 31
-Z13 !s108 1728376299.000000
+Z13 !s108 1728376063.000000
 !s107 D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v|
 !i113 1
@@ -202,7 +202,7 @@ R7
 R8
 n@c@p@u_tb
 vMux16
-R9
+R10
 !i10b 1
 !s100 =SWZM::NZMh2hHe=7E=BI3
 R2
@@ -212,13 +212,13 @@ R0
 w1726576600
 8D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v
-!i122 28
-R10
+!i122 13
+R11
 R5
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v|
 !i113 1
@@ -226,7 +226,7 @@ R7
 R8
 n@mux16
 vmyDeMux
-R9
+R10
 !i10b 1
 !s100 OeZRKOEk[I:3i2WFlf3XU1
 R2
@@ -236,13 +236,13 @@ R0
 w1726582299
 8D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v
-!i122 29
+!i122 14
 L0 5 14
 R5
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v|
 !i113 1
@@ -250,7 +250,7 @@ R7
 R8
 nmy@de@mux
 vmyMux
-R9
+R10
 !i10b 1
 !s100 Ed;?H9kFPfoXjOjz5^jAZ3
 R2
@@ -260,13 +260,13 @@ R0
 w1726581381
 8D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v
-!i122 30
+!i122 15
 L0 5 9
 R5
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v|
 !i113 1
@@ -274,7 +274,7 @@ R7
 R8
 nmy@mux
 vmyRegfile_tb
-R12
+R9
 !i10b 1
 !s100 ^LJ<bEVT7;8lQzMmBAZ5M0
 R2
@@ -284,7 +284,7 @@ R0
 w1726739200
 8D:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v
 FD:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v
-!i122 20
+!i122 5
 Z14 L0 5 39
 R5
 r1
@@ -298,7 +298,7 @@ R7
 R8
 nmy@regfile_tb
 vNot16
-R9
+R10
 !i10b 1
 !s100 8:VzI`Ga[RiI:iRkVM@7K2
 R2
@@ -308,13 +308,13 @@ R0
 w1726576339
 8D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v
-!i122 31
+!i122 16
 R4
 R5
 r1
 !s85 0
 31
-R11
+R12
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v|
 !i113 1
@@ -322,7 +322,7 @@ R7
 R8
 n@not16
 vregfile
-Z15 !s110 1728376315
+Z15 !s110 1728376084
 !i10b 1
 !s100 9oGnc1C<X@@HWXDKV[9hR0
 R2
@@ -332,13 +332,13 @@ R0
 w1726641117
 8D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v
-!i122 32
+!i122 17
 L0 5 17
 R5
 r1
 !s85 0
 31
-R11
+Z16 !s108 1728376084.000000
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v|
 !i113 1
@@ -355,13 +355,13 @@ R0
 w1728372405
 8D:/project_ALU/project_ALU.srcs/sources_1/new/thCpu.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/thCpu.v
-!i122 33
+!i122 18
 L0 5 18
 R5
 r1
 !s85 0
 31
-Z16 !s108 1728376315.000000
+R16
 !s107 D:/project_ALU/project_ALU.srcs/sources_1/new/thCpu.v|
 !s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/thCpu.v|
 !i113 1
@@ -379,7 +379,7 @@ R0
 w1728373271
 8D:/project_ALU/project_ALU.srcs/sources_1/new/thCpu_ml.v
 FD:/project_ALU/project_ALU.srcs/sources_1/new/thCpu_ml.v
-!i122 34
+!i122 19
 L0 5 33
 R5
 r1
@@ -393,17 +393,17 @@ R7
 R8
 nth@cpu_ml
 vthCpu_tb
-R12
+R9
 !i10b 1
-!s100 E_[<T@niz1:bnjR3Dh2Od0
+!s100 4UgX::[UB?=KClg@EJFDl0
 R2
-IA^]YkIPco;Bl?^64NkB011
+IPZjCZzB6`DeZJIoc`U^o91
 R3
 R0
-w1728376267
+w1728376045
 8D:/project_ALU/project_ALU.srcs/sim_1/new/thCpu_tb.v
 FD:/project_ALU/project_ALU.srcs/sim_1/new/thCpu_tb.v
-!i122 21
+!i122 6
 R14
 R5
 r1
