@@ -9,10 +9,7 @@ module CPU(
     input f1,f2,f3,
     input zx,nx,zy,ny,f,no,
     input we,//書き込み可能信号
-    input [2:0] inaddr,outaddr,
-    output [15:0] result, //ALUの出力
-    output [15:0] result1, //Mux制御後の出力
-    output [15:0] result2 //レジスタファイルに書き込後の出力
+    input [2:0] inaddr,outaddr
     );
     
     //wire [15:0] x , y;//ALUへの入力データ
@@ -30,17 +27,17 @@ module CPU(
     (* dont_touch = "TRUE" *) ALUCA ALUCA1(.x(x),.y(y),.zx(zx),.nx(nx),.zy(zy),.ny(ny),.f(f),
                     .no(no),.out(out_alu),.zr(zr),.ng(ng));
     
-    assign result = out_alu;
+    //assign result = out_alu;
     
     //MUX制御
     (* dont_touch = "TRUE" *) myMux myMux1(.rs(rs),.f1(f1),.din(out_mux),.out(out_alu));
     
-    assign result1 = out_mux;
+    //assign result1 = out_mux;
     
     //レジスタファイル制御
     (* dont_touch = "TRUE" *) regfile regfile1(.ck(clk),.we(we),.din(out_mux),.inaddr(inaddr),.dout(out_reg),.outaddr(outaddr));
     
-    assign result2 = out_reg;
+    //assign result2 = out_reg;
     
     //DeMux制御
    (* dont_touch = "TRUE" *)  myDeMux myDeMux1(.rs(rs),.ck(clk),.f2(f2),.f3(f3),.x(out_x),.y(out_y),.dout(out_reg));

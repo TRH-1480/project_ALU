@@ -1,0 +1,346 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/project_ALU/project_ALU.srcs
+vAdd16
+Z1 !s110 1728355543
+!i10b 1
+!s100 YlYNYT7`G>fSQMHFVkT7G1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8@PX?lK;[ZW>?W<FNeUC30
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726576709
+8D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v
+!i122 3
+Z4 L0 5 7
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1728355543.000000
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Add16.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@add16
+vALUCA
+R1
+!i10b 1
+!s100 [GM]nEoZG_z<4Ce7?Mi9g2
+R2
+I:i9EcQJoRacnRKb2JdWj12
+R3
+R0
+w1727354115
+8D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v
+!i122 4
+L0 5 52
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/ALUCA.v|
+!i113 1
+R7
+R8
+n@a@l@u@c@a
+vALUCA_tb
+Z9 !s110 1728355525
+!i10b 1
+!s100 KPiU[4:SV1E:Y>dldfFXY1
+R2
+IM8zP7Ukcb3cn4Ra6i;D7O0
+R3
+R0
+w1726739207
+8D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v
+FD:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v
+!i122 0
+L0 5 119
+R5
+r1
+!s85 0
+31
+!s108 1728355524.000000
+!s107 D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sim_1/new/ALUCA_tb.v|
+!i113 1
+R7
+R8
+n@a@l@u@c@a_tb
+vAnd
+Z10 !s110 1728355544
+!i10b 1
+!s100 6CE=@Ek?b^F=X^3L:?oRU0
+R2
+IWz5ia?lQKj@?J:[2ZeUYF0
+R3
+R0
+w1726641390
+8D:/project_ALU/project_ALU.srcs/sources_1/new/And.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/And.v
+!i122 5
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/And.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/And.v|
+!i113 1
+R7
+R8
+n@and
+vAnd16
+R10
+!i10b 1
+!s100 2[cdh^M;kJQkz2156Q3mH1
+R2
+IX7La5K[7fUo6n`n1^f3jE0
+R3
+R0
+w1726576499
+8D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/And16.v
+!i122 6
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1728355544.000000
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/And16.v|
+!i113 1
+R7
+R8
+n@and16
+vAnd16Way
+R10
+!i10b 1
+!s100 `zR3iJfHLZ1]cbg0ZAHZ[2
+R2
+IOdfij9]dOA<hP`be6E6D_0
+R3
+R0
+w1726641599
+8D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v
+!i122 7
+Z12 L0 5 8
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/And16Way.v|
+!i113 1
+R7
+R8
+n@and16@way
+vCPU
+R10
+!i10b 1
+!s100 EJbgTP;mAHa3^DIC?zSjR1
+R2
+IA@>J95adM>Imhn1CJSG`T1
+R3
+R0
+w1727353791
+8D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v
+!i122 8
+L0 5 46
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/CPU.v|
+!i113 1
+R7
+R8
+n@c@p@u
+vCPU_tb
+R9
+!i10b 1
+!s100 DZ`Ld:6L9>4RCM1;_Vc_W3
+R2
+I4NgcZz8fZTbCGh2zheQe^2
+R3
+R0
+w1727354050
+8D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v
+FD:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v
+!i122 1
+L0 4 83
+R5
+r1
+!s85 0
+31
+Z13 !s108 1728355525.000000
+!s107 D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sim_1/new/CPU_tb.v|
+!i113 1
+R7
+R8
+n@c@p@u_tb
+vMux16
+Z14 !s110 1728355545
+!i10b 1
+!s100 =SWZM::NZMh2hHe=7E=BI3
+R2
+IA=l96o=5N5k6<e3^Cz`^?0
+R3
+R0
+w1726576600
+8D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v
+!i122 9
+R12
+R5
+r1
+!s85 0
+31
+Z15 !s108 1728355545.000000
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Mux16.v|
+!i113 1
+R7
+R8
+n@mux16
+vmyDeMux
+R14
+!i10b 1
+!s100 OeZRKOEk[I:3i2WFlf3XU1
+R2
+IEkaYD92AQ?Mgc?<>9TER90
+R3
+R0
+w1726582299
+8D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v
+!i122 10
+L0 5 14
+R5
+r1
+!s85 0
+31
+R15
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/myDeMux.v|
+!i113 1
+R7
+R8
+nmy@de@mux
+vmyMux
+R14
+!i10b 1
+!s100 Ed;?H9kFPfoXjOjz5^jAZ3
+R2
+I_W@FdJRN6iKmGBcD5Bj<H2
+R3
+R0
+w1726581381
+8D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v
+!i122 11
+L0 5 9
+R5
+r1
+!s85 0
+31
+R15
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/myMux.v|
+!i113 1
+R7
+R8
+nmy@mux
+vmyRegfile_tb
+R9
+!i10b 1
+!s100 ^LJ<bEVT7;8lQzMmBAZ5M0
+R2
+Ibg`Mm;gnhz>=N`M9X=@6e0
+R3
+R0
+w1726739200
+8D:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v
+FD:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v
+!i122 2
+L0 5 39
+R5
+r1
+!s85 0
+31
+R13
+!s107 D:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sim_1/new/myRegfile_tb.v|
+!i113 1
+R7
+R8
+nmy@regfile_tb
+vNot16
+Z16 !s110 1728355546
+!i10b 1
+!s100 8:VzI`Ga[RiI:iRkVM@7K2
+R2
+IZbCdLb`Y2AHh=:SOY_cz33
+R3
+R0
+w1726576339
+8D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v
+!i122 12
+R4
+R5
+r1
+!s85 0
+31
+Z17 !s108 1728355546.000000
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/Not16.v|
+!i113 1
+R7
+R8
+n@not16
+vregfile
+R16
+!i10b 1
+!s100 9oGnc1C<X@@HWXDKV[9hR0
+R2
+IDjci`kB9<^Y8o]jI<Tel;3
+R3
+R0
+w1726641117
+8D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v
+FD:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v
+!i122 13
+L0 5 17
+R5
+r1
+!s85 0
+31
+R17
+!s107 D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v|
+!s90 -reportprogress|300|-work|work|D:/project_ALU/project_ALU.srcs/sources_1/new/regfile.v|
+!i113 1
+R7
+R8
