@@ -27,7 +27,7 @@ module thCpu_ml(
     assign no = command [0];
     
     ALUCA Alu_1(.x(x),.y(y),.zx(zx),.nx(nx),.zy(zy),.ny(ny),.f(f),
-                    .no(no),.out(out_alu),.zr(zr),.ng(ng));
+                    .no(no),.out(out),.zr(zr),.ng(ng));
                     
     regfile reg_1(.ck(ck),.we(we),.din(din),.inaddr(inaddr),.dout(dout),
                     .outaddr(outaddr)); 
