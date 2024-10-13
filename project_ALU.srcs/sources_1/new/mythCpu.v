@@ -19,7 +19,7 @@ module mythCpu(
     ALUCA Alu_1(.x(x),.y(y),.zx(zx),.nx(nx),.zy(zy),.ny(ny),.f(f),
                     .no(no),.out(out),.zr(zr),.ng(ng));
                     
-    myMux Mux_1(.rs(rs),.f1(f1),.din(out),.out(din));                
+    myMux Mux_1(.rs(rs),.f1(f1),.din(din),.out(out));                
      
     regfile reg_1(.ck(ck),.we(we),.din(din),.inaddr(inaddr),.dout(dout),
                     .outaddr(outaddr));    
