@@ -4,6 +4,7 @@
 module mythCpu_ml(
        input [15:0] x,y,
        input [10:0] command,
+       input [15:0] din_reg,
        input [15:0] din,din_demux,//out_alu,out_reg
        output [15:0] out,
        output [15:0] dout_mux,

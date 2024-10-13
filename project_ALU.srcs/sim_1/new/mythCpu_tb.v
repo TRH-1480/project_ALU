@@ -6,6 +6,7 @@ module mythCpu_tb;
 
     reg [15:0] x,y;
     reg [10:0] command;
+    reg [15:0] din_reg;
     reg [15:0] din,din_demux;
     wire [15:0] out;
     wire [15:0] dout_mux,dout,out_x,out_y;
@@ -16,7 +17,7 @@ module mythCpu_tb;
     
     parameter STEP = 100;
     
-    mythCpu_ml thCpu_1(.x(x),.y(y),.command(command),.din(din),.din_demux(din_demux),.out(out)
+    mythCpu_ml thCpu_1(.x(x),.y(y),.command(command),.din_reg(din_reg),.din(din),.din_demux(din_demux),.out(out)
         ,.dout_mux(dout_mux),.dout(dout),.out_x(out_x),.out_y(out_y),.zr(zr),.ng(ng),.ck(ck),.f1(f1),.f2(f2),.f3(f3),.rs(rs));
     
     //ÉNÉçÉbÉNÇÃê∂ê¨
@@ -43,9 +44,9 @@ module mythCpu_tb;
     
     initial begin
     
-//    #STEP
-//        f1 = 1;
-//        rs = 0;
+    #STEP
+        f1 = 1;
+        rs = 0;
     #STEP
         x = 16'b0000_0000_0000_1111;
         y = 16'b0000_0000_0000_0001;
