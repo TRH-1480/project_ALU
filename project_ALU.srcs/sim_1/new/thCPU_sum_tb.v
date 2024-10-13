@@ -14,7 +14,7 @@ module thCPU_sum_tb;
     
     integer i ;
     
-    parameter STEP = 100;
+    parameter STEP = 10;
     
     thCpu_ml thCpu1(.x(x),.y(y),.command(command),.out(out),.din(din),
         .dout(dout),.zr(zr),.ng(ng),.ck(ck));
