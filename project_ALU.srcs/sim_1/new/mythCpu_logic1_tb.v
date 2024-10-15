@@ -35,11 +35,21 @@ module mythCpu_logic1_tb;
        #STEP f1 = 0;
        #STEP f1 = 1;
        #STEP f2 = 1;
-       #STEP f3 = 0;
+             f3 = 1;
+             din_demux = 16'b0000_0000_0000_0000;
+       #STEP f2 = 0;
+             f3 = 1;
+             din_demux = 16'b0000_0000_0000_0001;
+       #STEP f2 = 1;
+             f3 = 0;      
+             
        #STEP rs = 0;   
        #STEP
-            x = 16'b0000_0000_0000_0000;
-            y = 16'b0000_0000_0000_0001;
+//            x = 16'b0000_0000_0000_0000;
+//            y = 16'b0000_0000_0000_0001;
+              x = out_x;
+              y = out_y;
+             
        #STEP
             command = 11'b0_0_000_000010;
        #STEP    
@@ -75,9 +85,10 @@ module mythCpu_logic1_tb;
                     din_demux = dout;
               #STEP     
                     x = out_x;
-                    y = out_y;        
+                    y = out_y;
+              #STEP             
 		      //------------------------------------------
-		      $display("Ans = %d , x = %d , y = %d",dout,x,y);
+		      $display("Ans = %d , x = %d , y = %d",out,x,y);
 		end
 		#STEP  $finish;
 	end	                   
