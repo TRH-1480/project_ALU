@@ -32,6 +32,7 @@ module mythCpu_logic1_tb;
     
     
     initial begin 
+        #STEP rs = 0; 
        #STEP f1 = 0;
        #STEP f1 = 1;
        #STEP f2 = 1;
@@ -43,7 +44,7 @@ module mythCpu_logic1_tb;
        #STEP f2 = 1;
              f3 = 0;      
              
-       #STEP rs = 0;   
+//       #STEP rs = 0;   
        #STEP
 //            x = 16'b0000_0000_0000_0000;
 //            y = 16'b0000_0000_0000_0001;
